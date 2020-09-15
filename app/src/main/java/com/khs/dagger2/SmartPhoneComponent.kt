@@ -1,8 +1,10 @@
 package com.khs.dagger2
 
 import dagger.Component
+import javax.inject.Singleton
 
-@Component
+@Singleton
+@Component(modules = [MemoryCardModule::class,NCBatteryModule::class])
 interface SmartPhoneComponent {
-    fun getSmartPhone() : SmartPhone
+    fun inject(mainActivity: MainActivity)
 }

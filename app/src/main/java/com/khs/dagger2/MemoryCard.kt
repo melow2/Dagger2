@@ -3,7 +3,7 @@ package com.khs.dagger2
 import android.util.Log
 import javax.inject.Inject
 
-class MemoryCard @Inject constructor() {
+class MemoryCard {
     init {
         Log.i("MYTAG","Memory Card Constructed")
     }
